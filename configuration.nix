@@ -94,7 +94,9 @@
     home-manager
     unzip
     python3
+    (import ./Packages/packettracer.nix { inherit pkgs lib; })
   ];
+
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.auto-optimise-store = true;
