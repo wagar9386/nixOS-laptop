@@ -1,0 +1,119 @@
+/* Gruvbox Dark — rofi theme
+   Matches waybar/kitty palette exactly
+*/
+
+* {
+    bg0:     #282828;
+    bg1:     #3c3836;
+    bg2:     #504945;
+    fg:      #ebdbb2;
+    gray:    #928374;
+    orange:  #fe8019;
+    yellow:  #fabd2f;
+    blue:    #83a598;
+    purple:  #d3869b;
+    aqua:    #8ec07c;
+    red:     #fb4934;
+
+    background-color: transparent;
+    text-color:       @fg;
+    font:             "JetBrainsMono Nerd Font 13";
+}
+
+window {
+    background-color: @bg0;
+    border:           2px solid;
+    border-color:     @orange;
+    border-radius:    12px;
+    width:            640px;
+    padding:          0;
+}
+
+mainbox {
+    background-color: transparent;
+    padding:          16px;
+    spacing:          12px;
+}
+
+inputbar {
+    background-color: @bg1;
+    border-radius:    8px;
+    padding:          12px 16px;
+    spacing:          10px;
+    children:         [ "prompt", "entry" ];
+}
+
+prompt {
+    text-color: @orange;
+    font:       "JetBrainsMono Nerd Font Bold 13";
+}
+
+entry {
+    placeholder:       "Search apps…";
+    placeholder-color: @gray;
+    text-color:        @fg;
+}
+
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            10;
+    spacing:          4px;
+    cycle:            true;
+    dynamic:          true;
+    scrollbar:        false;
+    margin:           4px 0 0 0;
+}
+
+element {
+    background-color: transparent;
+    border-radius:    8px;
+    padding:          10px 14px;
+    spacing:          12px;
+    orientation:      horizontal;
+}
+
+element normal normal {
+    background-color: transparent;
+    text-color:       @gray;
+}
+
+element normal active {
+    background-color: #504945aa;
+    text-color:       @fg;
+}
+
+element alternate normal {
+    background-color: transparent;
+    text-color:       @gray;
+}
+
+element selected normal {
+    background-color: #fe801926;
+    text-color:       @yellow;
+}
+
+element selected active {
+    background-color: #fe801926;
+    text-color:       @orange;
+}
+
+element-icon {
+    size:           28px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color:     inherit;
+}
+
+message {
+    background-color: @bg1;
+    border-radius:    8px;
+    padding:          10px 14px;
+}
+
+textbox {
+    text-color: @gray;
+}

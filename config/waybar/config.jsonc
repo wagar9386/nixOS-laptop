@@ -1,0 +1,84 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+  "margin-top": 8,
+  "margin-left": 10,
+  "margin-right": 10,
+  "spacing": 0,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "clock", "bluetooth"],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "default": "{}"
+    },
+    "all-outputs": true
+  },
+
+
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 5,
+    "on-click": "kitty --class btop -e btop"
+  },
+
+  "memory": {
+    "format": " {percentage}%",
+    "interval": 5,
+    "on-click": "kitty --class btop -e btop"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " 󰖁 ",
+    "format-icons": {
+      "headphone": "󰋋",
+      "phone": "󰏲",
+      "portable": "󰏲",
+      "car": "󰄋",
+      "speaker": "󰓃",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-ethernet": "󰈀 {ipaddr}",
+    "format-wifi": "󰖩 {ipaddr}", 
+    "interval": 10,
+    "format-disconnected": "󰖪  offline",
+    "on-click": "nmtui"
+
+  },
+ "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "interval": 30
+},
+
+  "clock": {
+    "format": " {:%H:%M}",
+    "format-alt": "{:%A, %d %B %Y}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "bluetooth": {
+    "format": "󰂯",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "on-click": "blueman-manager",
+    "interval": 30
+  }
+}

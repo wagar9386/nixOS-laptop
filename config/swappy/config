@@ -1,0 +1,4 @@
+[Default]
+save_dir=$HOME/Pictures/screenies
+save_filename_format=%Y%m%d_%Hh%Mm%Ss.png
+show_panel=true

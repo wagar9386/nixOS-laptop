@@ -1,0 +1,141 @@
+/* Gruvbox Dark palette
+  bg0     #282828
+  bg1     #3c3836
+  bg2     #504945
+  fg      #ebdbb2
+  red     #fb4934
+  green   #b8bb26
+  yellow  #fabd2f
+  blue    #83a598
+  purple  #d3869b
+  aqua    #8ec07c
+  orange  #fe8019
+  gray    #928374
+*/
+
+* {
+  border: none;
+  border-radius: 10px;
+  font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(40, 40, 40, 0.92);
+  color: #ebdbb2;
+  border-radius: 12px;
+  border: 1px solid rgba(80, 73, 69, 0.6);
+}
+
+#workspaces {
+  background: transparent;
+  margin: 4px 0 4px 6px;
+  padding: 0 4px;
+}
+
+#workspaces button {
+  background: transparent;
+  color: #928374;
+  padding: 2px 14px;
+  margin: 3px 2px;
+  border-radius: 8px;
+  opacity: 0.45;
+  transition: background-color 200ms ease, color 200ms ease, opacity 200ms ease;
+}
+
+#workspaces button:hover {
+  background: rgba(80, 73, 69, 0.4);
+  color: #ebdbb2;
+  box-shadow: none;
+  opacity: 0.75;
+}
+
+#workspaces button.active {
+  background: rgba(254, 128, 25, 0.18);
+  color: #fe8019;
+  font-weight: bold;
+  opacity: 1;
+}
+
+#window {
+  background: transparent;
+  color: #b8bb26;
+  padding: 0 16px;
+  font-weight: 500;
+}
+
+/* Shared pill style for all right-side modules */
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#battery,
+#bluetooth {
+  background: rgba(60, 56, 54, 0.6);
+  padding: 0 12px;
+  margin: 5px 3px;
+  border-radius: 8px;
+}
+
+#clock {
+  color: #fabd2f;
+}
+
+#cpu {
+  color: #8ec07c;
+}
+
+#memory {
+  color: #fe8019;
+}
+
+#pulseaudio {
+  color: #d3869b;
+}
+
+#pulseaudio.muted {
+  color: #928374;
+}
+
+#network {
+  color: #fb4934;
+}
+
+#network.disconnected {
+  color: #928374;
+}
+
+#battery {
+    color: #b8bb26;
+}
+#battery.critical {
+    color: #fb4934;
+}
+#bluetooth {
+  color: #83a598;
+  padding: 0 12px;
+  margin: 5px 8px 5px 3px;
+}
+
+#bluetooth.disconnected {
+  color: #928374;
+}
+
+#tray {
+  background: transparent;
+  padding: 0 8px;
+  margin-right: 8px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: rgba(251, 73, 24, 0.4);
+}
+
