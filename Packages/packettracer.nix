@@ -4,7 +4,9 @@ pkgs.stdenv.mkDerivation {
   pname = "cisco-packet-tracer";
   version = "9.0.0";
 
-  src = ./CiscoPacketTracer_900_Ubuntu_64bit.deb;
+
+  src = /home/agar/Downloads/CiscoPacketTracer_900_Ubuntu_64bit.deb;
+
 
   nativeBuildInputs = [
     pkgs.dpkg
