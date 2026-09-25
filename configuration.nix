@@ -23,7 +23,6 @@
   time.timeZone = "Europe/Madrid";
 
 
-  services.mullvad-vpn.enable = true;
 
 
 
@@ -60,6 +59,9 @@
     ];
   };
 
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.hyprland.enableGnomeKeyring = true;
+
   programs.uwsm = {
     enable = true;
     waylandCompositors.hyprland = {
@@ -94,9 +96,16 @@
     home-manager
     unzip
     python3
+    fuse
+    fuse3
+    libpng
+    openvpn
     (import ./Packages/packettracer.nix { inherit pkgs lib; })
   ];
 
+  networking.networkmanager.plugins = with pkgs; [
+    networkmanager-openvpn
+  ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.auto-optimise-store = true;
