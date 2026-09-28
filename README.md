@@ -46,7 +46,7 @@
 | `SUPER + E` | Open file manager (Ranger) |
 | `SUPER + M` | Exit Hyprland |
 | `SUPER + SHIFT + P` | Shutdown |
-| `End` | Screenshot (region, swappy) |
+| `F1` | Screenshot (region, swappy) |
 
 ## Waybar modules
 Left: workspaces — Center: media player (click to play/pause, scroll to skip) — Right: volume, network IP, CPU (click → btop), RAM (click → btop), weather, clock, bluetooth 
