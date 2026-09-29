@@ -70,6 +70,8 @@
     geany
     nudoku
     proton-vpn
+    nchat
+    libpng
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
       sleep 2
