@@ -70,6 +70,7 @@
     geany
     nudoku
     proton-vpn
+    winbox
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
       sleep 2
