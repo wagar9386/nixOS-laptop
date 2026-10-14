@@ -71,6 +71,10 @@
     nudoku
     proton-vpn
     winbox
+    arp-scan
+    curseofwar
+    wine
+    dwarf-fortress
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
       sleep 2
