@@ -77,7 +77,6 @@
     dwarf-fortress
     zeroad
     supertuxkart
-    dbeaver-bin
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
       sleep 2
