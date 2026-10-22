@@ -77,6 +77,8 @@
     dwarf-fortress
     zeroad
     supertuxkart
+    pvzge
+    postgresql
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
       sleep 2

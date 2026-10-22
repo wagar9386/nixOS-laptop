@@ -100,6 +100,7 @@
     fuse3
     libpng
     openvpn
+    pipx
     (import ./Packages/packettracer.nix { inherit pkgs lib; })
   ];
 
