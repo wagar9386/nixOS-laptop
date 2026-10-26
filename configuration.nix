@@ -32,6 +32,11 @@
 
   };
 
+  programs.wireshark = {
+    enable = true;
+    dumpcap.enable = true;
+  };
+
   nix.gc = {
     automatic = true;
     dates = "weekly";
@@ -74,7 +79,7 @@
 
   users.users.agar = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "vboxusers" ];
+    extraGroups = [ "wheel" "vboxusers" "wireshark" ];
     packages = with pkgs; [
       tree
     ];
@@ -100,7 +105,8 @@
     fuse3
     libpng
     openvpn
-    pipx
+    python314Packages.pip
+    net-tools
     (import ./Packages/packettracer.nix { inherit pkgs lib; })
   ];
 

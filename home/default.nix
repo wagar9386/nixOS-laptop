@@ -79,6 +79,7 @@
     supertuxkart
     pvzge
     postgresql
+    wireshark
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
       sleep 2
