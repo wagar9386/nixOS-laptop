@@ -37,6 +37,19 @@
     dumpcap.enable = true;
   };
 
+
+  services.printing = {
+    enable = true;
+
+    # Add a driver here if your printer needs one.
+    drivers = with pkgs; [
+      gutenprint
+    ];
+  };
+
+  # Detect supported USB printers automatically.
+  services.ipp-usb.enable = true;
+
   nix.gc = {
     automatic = true;
     dates = "weekly";
@@ -79,7 +92,7 @@
 
   users.users.agar = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "vboxusers" "wireshark" ];
+    extraGroups = [ "wheel" "vboxusers" "wireshark" "lpadmin" ];
     packages = with pkgs; [
       tree
     ];

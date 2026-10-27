@@ -80,6 +80,7 @@
     pvzge
     postgresql
     wireshark
+    system-config-printer
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
       sleep 2
