@@ -38,14 +38,7 @@
   };
 
 
-  services.printing = {
-    enable = true;
-
-    # Add a driver here if your printer needs one.
-    drivers = with pkgs; [
-      gutenprint
-    ];
-  };
+  services.printing.enable = true;
 
   # Detect supported USB printers automatically.
   services.ipp-usb.enable = true;
