@@ -56,7 +56,7 @@
   "network": {
     "format-ethernet": "󰈀 {ipaddr}",
     "format-wifi": "󰖩 {ipaddr}", 
-    "interval": 10,
+    "interval": 5,
     "format-disconnected": "󰖪  offline",
     "on-click": "nmtui"
 
