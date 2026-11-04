@@ -64,7 +64,6 @@
     bc
     hwinfo
     vscode
-    nbsdgames
     cpat
     python3
     geany
@@ -83,7 +82,7 @@
     system-config-printer
     binary
     samba
-    sauerbraten
+    nbsdgames
     prismlauncher
     minecraft-server
     (pkgs.writeShellScriptBin "deemix" ''
