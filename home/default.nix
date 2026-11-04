@@ -83,6 +83,9 @@
     system-config-printer
     binary
     samba
+    sauerbraten
+    prismlauncher
+    minecraft-server
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
       sleep 2
