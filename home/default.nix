@@ -72,8 +72,8 @@
     winbox
     arp-scan
     curseofwar
-    wine
     dwarf-fortress
+    wineWow64Packages.stable
     zeroad
     supertuxkart
     pvzge
