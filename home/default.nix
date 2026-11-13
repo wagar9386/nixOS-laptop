@@ -74,9 +74,7 @@
     curseofwar
     dwarf-fortress
     wineWow64Packages.stable
-    zeroad
     supertuxkart
-    pvzge
     postgresql
     wireshark
     system-config-printer
@@ -84,7 +82,6 @@
     samba
     nbsdgames
     prismlauncher
-    minecraft-server
     heroic
     (pkgs.writeShellScriptBin "deemix" ''
       nix run github:bambanah/deemix#webui &
